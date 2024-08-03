@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello there from Laravel: {{ $name }}</h1>
-    @if($name == 'Some Name')
-        <p>You are the admin</p>
-    @else
-        <p>You are not the admin</p>
-    @endif
-</body>
-</html>
+@extends('layouts.base')
+@section('name', 'A username')
+
+@section('content')
+<h1 class="text-4xl font-bold">Home</h1>
+<p class="mt-4 text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque in saepe ea eius ex recusandae impedit earum! Aperiam quibusdam quos voluptate quisquam cum saepe incidunt odio delectus! Eius, obcaecati asperiores.</p>
+@endsection
